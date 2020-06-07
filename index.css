@@ -1,10 +1,22 @@
 :root {
     --sun-size: 80px;
+    --speed: 1;
 }
 
 @keyframes spin{
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes glow{
+    from {
+        background-color: orange;
+        box-shadow: 0 0 50px orange;
+    }
+    to {
+        background-color: yellow;
+        box-shadow: 0 0 50px yellow;
     }
 }
 
@@ -25,6 +37,8 @@ body {
     box-shadow: 0 0 50px orange;
     height: var(--sun-size);
     width: var(--sun-size);
+    animation: glow calc(5s / var(--speed)) linear infinite alternate;
+
 }
 .mercury-orbit {
     top: calc(50vh - var(--sun-size) * 1);
@@ -33,7 +47,7 @@ body {
     border: 1px solid lightblue;
     height: calc(var(--sun-size) * 2);
     width: calc(var(--sun-size) * 2);
-    animation: spin 8.8s linear infinite;
+    animation: spin calc(8.8s / var(--speed)) linear infinite;
 }
 .mercury {
 	margin-left: 11.5%;
@@ -50,7 +64,7 @@ body {
     border: 1px solid lightblue;
     height: calc(var(--sun-size) * 3);
     width: calc(var(--sun-size) * 3);
-    animation: spin 22.5s linear infinite;
+    animation: spin calc(22.5s / var(--speed)) linear infinite;
 }
 .venus {
 	margin-left: 11.5%;
@@ -67,7 +81,7 @@ body {
     border: 1px solid lightblue;
     height: calc(var(--sun-size) * 4);
     width: calc(var(--sun-size) * 4);
-    animation: spin 36.5s linear infinite;
+    animation: spin calc(36.5s / var(--speed)) linear infinite;
 }
 .earth {
 	margin-left: 11.5%;
@@ -92,7 +106,7 @@ body {
     background-color: transparent;
     height: calc(var(--sun-size) / 2.5);
     width: calc(var(--sun-size) / 2.5);
-    animation: spin 2s linear infinite;
+    animation: spin calc(2s / var(--speed)) linear infinite;
 }
 .mars-orbit {
     top: calc(50vh - var(--sun-size) * 2.5);
@@ -101,7 +115,7 @@ body {
     border: 1px solid lightblue;
     height: calc(var(--sun-size) * 5);
     width: calc(var(--sun-size) * 5);
-    animation: spin 68.67s linear infinite;
+    animation: spin calc(68.67s / var(--speed)) linear infinite;
 }
 .mars {
 	margin-left: 13%;
@@ -118,7 +132,7 @@ body {
     border: 1px solid lightblue;
     height: calc(var(--sun-size) * 7);
     width: calc(var(--sun-size) * 7);
-    animation: spin 433.2s linear infinite;
+    animation: spin calc(433.2s / var(--speed)) linear infinite;
 }
 .jupiter {
 	margin-left: 10.5%;
@@ -135,7 +149,7 @@ body {
     border: 1px solid lightblue;
     height: calc(var(--sun-size) * 8);
     width: calc(var(--sun-size) * 8);
-    animation: spin 1076s linear infinite;
+    animation: spin calc(1076s / var(--speed)) linear infinite;
 }
 .saturn {
 	margin-left: 12.75%;
@@ -160,7 +174,7 @@ body {
     border: 1px solid lightblue;
     height: calc(var(--sun-size) * 9);
     width: calc(var(--sun-size) * 9);
-    animation: spin 3068.5s linear infinite;
+    animation: spin calc(3068.5s / var(--speed)) linear infinite;
 }
 .uranus {
 	margin-left: 13.25%;
@@ -185,7 +199,7 @@ body {
     border: 1px solid lightblue;
     height: calc(var(--sun-size) * 10);
     width: calc(var(--sun-size) * 10);
-    animation: spin 6019.1s linear infinite;
+    animation: spin calc(6019.1s / var(--speed)) linear infinite;
 }
 .neptune {
 	margin-left: 13.75%;
@@ -202,7 +216,7 @@ body {
     border: 1px solid lightblue;
     height: calc(var(--sun-size) * 11);
     width: calc(var(--sun-size) * 11);
-    animation: spin 9080s linear infinite;
+    animation: spin calc(9080s / var(--speed)) linear infinite;
 }
 .pluto {
 	margin-left: 14%;
