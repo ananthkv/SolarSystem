@@ -1,5 +1,5 @@
 :root {
-    --sun-size: 80px;
+    --sun-size: 75px;
     --speed: 1;
 }
 
@@ -22,6 +22,7 @@
 
 body {
     background-color: black;
+    overflow: hidden;
 }
 
 .celestial {
@@ -52,7 +53,7 @@ body {
 .mercury {
 	margin-left: 11.5%;
 	margin-top: 11.5%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: gray;
     height: calc(var(--sun-size) / 10);
     width: calc(var(--sun-size) / 10);
@@ -69,7 +70,7 @@ body {
 .venus {
 	margin-left: 11.5%;
 	margin-top: 11.5%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: yellow;
     height: calc(var(--sun-size) / 6);
     width: calc(var(--sun-size) / 6);
@@ -86,7 +87,7 @@ body {
 .earth {
 	margin-left: 11.5%;
 	margin-top: 11.5%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: blue;
     height: calc(var(--sun-size) / 5);
     width: calc(var(--sun-size) / 5);
@@ -94,7 +95,7 @@ body {
 .moon {
 	margin-left: -11.5%;
 	margin-top: -11.5%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: lightgrey;
     height: calc(var(--sun-size) / 8);
     width: calc(var(--sun-size) / 8);
@@ -120,7 +121,7 @@ body {
 .mars {
 	margin-left: 13%;
 	margin-top: 13%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: red;
     height: calc(var(--sun-size) / 8);
     width: calc(var(--sun-size) / 8);
@@ -137,7 +138,7 @@ body {
 .jupiter {
 	margin-left: 10.5%;
 	margin-top: 10.5%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: orange;
     height: calc(var(--sun-size) / 2);
     width: calc(var(--sun-size) / 2);
@@ -154,7 +155,7 @@ body {
 .saturn {
 	margin-left: 12.75%;
 	margin-top: 12.75%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: palegoldenrod;
     height: calc(var(--sun-size) / 4);
     width: calc(var(--sun-size) / 4);
@@ -179,7 +180,7 @@ body {
 .uranus {
 	margin-left: 13.25%;
 	margin-top: 13.25%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: turquoise;
     height: calc(var(--sun-size) / 5);
     width: calc(var(--sun-size) / 5);
@@ -204,7 +205,7 @@ body {
 .neptune {
 	margin-left: 13.75%;
 	margin-top: 13.75%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: turquoise;
     height: calc(var(--sun-size) / 6);
     width: calc(var(--sun-size) / 6);
@@ -221,7 +222,7 @@ body {
 .pluto {
 	margin-left: 14%;
 	margin-top: 14%;
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-color: darkblue;
     height: calc(var(--sun-size) / 12);
     width: calc(var(--sun-size) / 12);

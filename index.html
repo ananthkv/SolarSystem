@@ -3,6 +3,7 @@
     <head>
         <title>Solar System</title>
         <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="stars.css"/>
     </head>
     <body>
         <div class="celestial sun"></div>
@@ -40,6 +41,20 @@
         </div>
         <div class="celestial pluto-orbit">
             <div class="celestial pluto"></div>
+        </div>
+        <div id="star-holder">
+            <script>
+                const starHolder = document.getElementById('star-holder');
+                for(let i=0;i<20;i++){
+                    const randomTop = Math.trunc(Math.random() * 100) + 'vh';
+                    const randomLeft = Math.trunc(Math.random() * 100) + 'vw';
+                    const divTag = document.createElement('div');
+                    divTag.className = "star-five";
+                    divTag.style.top = randomTop;
+                    divTag.style.left = randomLeft;
+                    starHolder.appendChild(divTag);
+                }
+            </script>
         </div>
     </body>
 </html

@@ -1,0 +1,88 @@
+
+:root {
+    --star-size: 1px;
+    --star-color: lightblue;
+}
+
+@keyframes glow{
+    from {
+        box-shadow: 0 0 50px lightblue;
+    }
+    to {
+        box-shadow: 0 0 50px yellow;
+    }
+}
+
+.star-six {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: calc(.5 * var(--star-size)) solid transparent;
+    border-right: calc(.5 * var(--star-size)) solid transparent;
+    border-bottom: calc(1 * var(--star-size)) solid var(--star-color);
+    box-shadow: 0 0 var(--star-size) var(--star-color);
+}
+.star-six:after {
+    position: absolute;
+    top: calc(.3 * var(--star-size));
+    left: calc(-.5 * var(--star-size));
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: calc(.5 * var(--star-size)) solid transparent;
+    border-right: calc(.5 * var(--star-size)) solid transparent;
+    border-top: calc(1 * var(--star-size)) solid var(--star-color);
+    box-shadow: 0 0 var(--star-size) var(--star-color);
+
+}
+
+
+
+.star-five {
+    position: relative;
+    margin: calc(.5 * var(--star-size)) 0;
+    display: block;
+    color: var(--star-color);
+    width: 0px;
+    height: 0px;
+    border-right: calc(1 * var(--star-size)) solid transparent;
+    border-bottom: calc(.7 * var(--star-size)) solid var(--star-color);
+    border-left: calc(1 * var(--star-size)) solid transparent;
+    transform: rotate(35deg);
+    box-shadow: 0 0 var(--star-size) var(--star-color);
+    animation: glow 1s linear infinite alternate;
+
+}
+.star-five:before {
+    position: absolute;
+    top: calc(-.45 * var(--star-size));
+    left: calc(-.65 * var(--star-size));
+    content: '';
+    height: 0;
+    width: 0;
+    display: block;
+    border-bottom: calc(.8 * var(--star-size)) solid var(--star-color);
+    border-left: calc(.3 * var(--star-size)) solid transparent;
+    border-right: calc(.3 * var(--star-size)) solid transparent;
+    transform: rotate(-35deg);
+    box-shadow: 0 0 var(--star-size) var(--star-color);
+    animation: glow 1s linear infinite alternate;
+
+}
+.star-five:after {
+    position: absolute;
+    top: calc(.03 * var(--star-size));
+    left: calc(-1.05 * var(--star-size));
+    content: '';
+    color: var(--star-color);
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-right: calc(1 * var(--star-size)) solid transparent;
+    border-bottom: calc(.7 * var(--star-size)) solid var(--star-color);
+    border-left: calc(1 * var(--star-size)) solid transparent;
+    transform: rotate(-70deg);
+    box-shadow: 0 0 var(--star-size) var(--star-color);
+    animation: glow 1s linear infinite alternate;
+
+}
